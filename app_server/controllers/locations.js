@@ -9,14 +9,14 @@ const homelist = (req, res) => {                                 // creates a ho
         sidebar: "Looking for wifi and a seat? Loc8r helps you find places to work when out and about. Perhaps with coffee, cake or a pint? Let Loc8r help you find the place you're looking for.",
         locations: [{                                         
             name: 'Mos Eisley Cantina',
-            address: '1st Villain Blvd. Star City, MI.',
+            address: '1st Villain Blvd. Star City, MI. RG6 1PS',
             rating: 3,
             facilities: ['Hot drinks', 'Food', 'Brawls', 'Premium wifi'],
             distance: '100m'
           },{
             name: 'Huxley\'s Books',
             address: '560 Huxley St, Reading Rd. Traverse City, MI.',
-            rating: 4,
+            rating: 5,
             facilities: ['Hot drinks', 'Great Books', 'Premium wifi'],
             distance: '110m'
           },{
@@ -28,7 +28,7 @@ const homelist = (req, res) => {                                 // creates a ho
           },{
             name: 'Cupperz Cafe',
             address: '77 Hard Yupperz St. Traverse City, MI.',
-            rating: 5,
+            rating: 4,
             facilities: ['Hot drinks', 'Booze', 'Squirrely Dans', 'Let that marinate', 'Hard Yup', 'Premium wifi'],
             distance: '250m'  
           }]        
@@ -48,10 +48,10 @@ const locationInfo = (req, res) => {
       },
       location: {
         name: 'Mos Eisley Cantina',
-        address: '1st Villain Blvd. Star City, MI.',
+        address: '1st Villain Blvd. Star City, MI. RG6 1PS',
         rating: 3,
         facilities: ['Hot drinks', 'Food', 'Brawls', 'Premium wifi'],
-        coords: {lat: 51.455041, lng: -0.9690884},
+        coords: {lng: -85.632625, lat: 44.716848},  
         openingTimes: [
           {
             days: 'Monday - Friday',
@@ -93,7 +93,7 @@ const addReview = (req, res) => {
   res.render('location-review-form',
     {
       title: 'Review Mos Eisley Cantina on Loc8r' ,
-      pageHeader: { title: 'Mos Eisley Cantina' }
+      pageHeader: { title: 'Mos Eisley Cantina' },
     }
   );
 };
